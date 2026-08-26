@@ -4,8 +4,8 @@
     <LangVersion>13.0</LangVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyName>AncientChaos</AssemblyName>
-    <RootNamespace>AncientChaos</RootNamespace>
+    <AssemblyName>AncientResidentsChaos</AssemblyName>
+    <RootNamespace>AncientResidentsChaos</RootNamespace>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
   </PropertyGroup>
   <ItemGroup>
@@ -14,3 +14,4 @@
     <Reference Include="0Harmony"><HintPath>..\..\..\Game\Steam\steamapps\common\Slay the Spire 2\data_sts2_windows_x86_64\0Harmony.dll</HintPath><Private>false</Private></Reference>
   </ItemGroup>
 </Project>
+

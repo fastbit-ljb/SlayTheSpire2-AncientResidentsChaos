@@ -1,9 +1,9 @@
 {
-  "id": "AncientChaos",
-  "name": "Ancient Chaos",
+  "id": "AncientResidentsChaos",
+  "name": "Ancient Residents Chaos",
   "author": "fastbit-ljb",
-  "description": "Shuffles Ancient visitors and all Ancient relic gifts across every act. The relic you see is the relic you receive.",
-  "version": "0.1.0",
+  "description": "Randomizes which Ancient resident appears in each act. Relic gift pools stay vanilla.",
+  "version": "0.1.1",
   "has_pck": false,
   "has_dll": true,
   "dependencies": [],
