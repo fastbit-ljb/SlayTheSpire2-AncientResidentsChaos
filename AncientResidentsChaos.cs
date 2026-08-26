@@ -7,9 +7,9 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Random;
 using MegaCrit.Sts2.Core.Rooms;
 
-namespace AncientChaos;
+namespace AncientResidentsChaos;
 
-internal static class AncientChaosRuntime
+internal static class AncientResidentsChaosRuntime
 {
     private static readonly FieldInfo? RoomsField = AccessTools.Field(typeof(ActModel), "_rooms");
 
@@ -29,12 +29,13 @@ internal static class AncientChaosRuntime
 }
 
 [HarmonyPatch]
-internal static class AncientChaosPatches
+internal static class AncientResidentsChaosPatches
 {
     [HarmonyPatch(typeof(ActModel), nameof(ActModel.GenerateRooms))]
     [HarmonyPostfix]
     private static void RandomizeAncientEncounter(ActModel __instance, Rng rng)
     {
-        AncientChaosRuntime.ReplaceActAncient(__instance, AncientChaosRuntime.PickRandomAncient(rng));
+        AncientResidentsChaosRuntime.ReplaceActAncient(__instance, AncientResidentsChaosRuntime.PickRandomAncient(rng));
     }
 }
+
